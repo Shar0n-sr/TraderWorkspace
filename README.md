@@ -158,41 +158,6 @@ TraderWorkspace follows a local-first data storage approach.
 
 ---
 
-## 🚀 Run Locally
-
-You can run the static application locally without installing a frontend framework.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/TraderWorkspace.git
-```
-
-### 2. Open the project directory
-
-```bash
-cd TraderWorkspace
-```
-
-### 3. Start a local development server
-
-```bash
-cd public
-python -m http.server 8000
-```
-
-### 4. Open the application
-
-Visit:
-
-```text
-http://localhost:8000
-```
-
-A local HTTP server is recommended because service workers require a secure context. Localhost is treated as a secure context by modern browsers.
-
----
-
 ## 📂 Project Structure
 
 ```text
