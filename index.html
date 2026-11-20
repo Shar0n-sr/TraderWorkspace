@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220"><meta name="description" content="TraderWorkspace — learn, record, reflect and improve. Your private trading development workspace.">
+<link rel="manifest" href="/manifest.json"><link rel="icon" href="/brand/traderworkspace-icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="TraderWorkspace">
+<title>TraderWorkspace — Your trading development workspace</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app" class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#dashboard" data-page="dashboard" aria-label="TraderWorkspace home"><img class="brand-logo brand-logo-dark" src="/brand/traderworkspace-dark-background.svg" alt="TraderWorkspace — Learn, Record, Improve"><img class="brand-logo brand-logo-light" src="/brand/traderworkspace-light-background.svg" alt="TraderWorkspace — Learn, Record, Improve"></a>
+<div class="profile-mini"><div class="avatar" id="avatar">T</div><div><b id="profile-name">Trader</b><small id="profile-stage">Beginner</small></div><button class="icon-btn" id="profile-edit" title="Edit profile">✎</button></div>
+<nav class="nav" aria-label="Main navigation">
+<div class="nav-label">WORKSPACE</div>
+<a class="nav-item active" href="#dashboard" data-page="dashboard"><span>▦</span>Overview</a>
+<!-- Personal journal navigation removed -->
+<a class="nav-item" href="#trades" data-page="trades"><span>⌁</span>Trade journal</a>
+<a class="nav-item" href="#analytics" data-page="analytics"><span>▥</span>Analytics</a>
+<a class="nav-item" href="#calendar" data-page="calendar"><span>▦</span>Activity calendar</a>
+<div class="nav-label">DEVELOPMENT</div>
+<a class="nav-item" href="#learning" data-page="learning"><span>◫</span>Learning hub</a>
+<a class="nav-item" href="#timer" data-page="timer"><span>◷</span>Time tracker</a>
+<a class="nav-item" href="#tasks" data-page="tasks"><span>☷</span>Tasks & planner</a>
+<a class="nav-item" href="#mindset" data-page="mindset"><span>◎</span>Mindset & discipline</a>
+<a class="nav-item" href="#mistakes" data-page="mistakes"><span>⌁</span>Mistake analysis</a>
+<div class="nav-label">PLANNING</div>
+<a class="nav-item" href="#goals" data-page="goals"><span>◈</span>Monthly goals</a>
+<a class="nav-item" href="#reviews" data-page="reviews"><span>▧</span>Reviews</a>
+<a class="nav-item" href="#risk" data-page="risk"><span>⊙</span>Risk calculator</a>
+<div class="nav-label">PREFERENCES</div>
+<a class="nav-item" href="#settings" data-page="settings"><span>⚙</span>Settings & data</a>
+</nav>
+<div class="sidebar-bottom"><div class="offline-pill"><i></i> Private · Local-first</div><small>Your data stays in this browser.</small></div>
+</aside>
+<div class="main-wrap">
+<header class="topbar"><button class="icon-btn mobile-menu" id="menu-toggle" aria-label="Toggle menu">☰</button><div class="crumb" id="breadcrumb">Overview</div><div class="top-actions"><span class="today-label" id="today-label"></span><button class="icon-btn" id="theme-toggle" title="Toggle theme">☼</button><button class="btn install-app-btn" id="install-app" type="button">＋ Install app</button><button class="primary-btn small" id="quick-add">＋ Quick add</button></div></header>
+<main id="view" class="content" tabindex="-1"></main>
+<footer class="footer"><div class="footer-product">TraderWorkspace <span>·</span> Your progress is built one deliberate decision at a time.</div><div class="creator-credit"><span>Developed by <strong>Sharon S R</strong></span><span class="creator-service">Custom website development</span><a href="mailto:srsharon06@gmail.com">srsharon06@gmail.com</a></div></footer>
+</div>
+</div>
+<div id="modal-root"></div><div id="toast-root" aria-live="polite"></div>
+<script type="module" src="/app.js"></script>
+</body></html>
